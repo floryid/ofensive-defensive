@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIEM (Security Information and Event Management) - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">SIEM (Security Information and Event Management)</h2>
+            <p class="text-lg text-gray-300">Pusat saraf keamanan siber untuk deteksi ancaman, respons insiden, dan kepatuhan.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 mx-auto text-green-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.037c0 .679.672 1.225 1.344 1.225h3.212c.672 0 1.344-.546 1.344-1.225v-1.037m-4.648-1.492l-.39-.26C9.962 15.531 9.75 15.31 9.532 15.089m6.648 1.492l.39-.26c.218-.219.43.441.648-.662m-5.974 0a.75.75 0 01-.75-.75v-.561c0-.9-.672-1.639-1.5-1.639H5.25a.75.75 0 01-.75-.75m4.5 7.5a.75.75 0 01-.75-.75v-.561c0-.9-.672-1.639-1.5-1.639H2.25a.75.75 0 01-.75-.75m11.25 0a.75.75 0 01-.75-.75v-.561c0-.9-.672-1.639-1.5-1.639H8.25a.75.75 0 01-.75-.75m4.5 7.5a.75.75 0 01-.75-.75v-.561c0-.9-.672-1.639-1.5-1.639H11.25a.75.75 0 01-.75-.75m4.5 7.5a.75.75 0 01-.75-.75v-.561c0-.9-.672-1.639-1.5-1.639H14.25a.75.75 0 01-.75-.75m1.5 1.5l-.39-.26c-.218-.219-.43-.441-.648-.662M16.5 16.5l-.39-.26c-.218-.219-.43-.441-.648-.662M19.5 16.5l-.39-.26c-.218-.219-.43-.441-.648-.662" />
+            </svg>
+        </section>
+
+        <!-- What is SIEM Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Apa itu SIEM?</h2>
+            <p class="text-gray-300 mb-4">Security Information and Event Management (SIEM) adalah solusi keamanan yang menggabungkan Security Information Management (SIM) dan Security Event Management (SEM) dalam satu sistem terpusat. SIEM dirancang untuk memberikan visibilitas real-time dan analisis mendalam terhadap peristiwa keamanan di seluruh infrastruktur TI suatu organisasi.</p>
+            <p class="text-gray-300 mb-4">Tujuan utama SIEM adalah untuk membantu organisasi mendeteksi, menganalisis, dan merespons ancaman keamanan dan insiden sebelum mereka menyebabkan kerusakan signifikan. SIEM melakukan ini dengan mengumpulkan dan menganalisis data log dan peristiwa keamanan dari berbagai sumber, mengidentifikasi pola dan anomali yang mencurigakan, dan menghasilkan peringatan (alerts) untuk tim keamanan.</p>
+            <p class="text-gray-300">SIEM menjadi komponen penting dalam pusat operasi keamanan (SOC) modern dan strategi keamanan siber proaktif.</p>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Fitur Utama SIEM</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Pengumpulan Log dan Data:</strong> Mengumpulkan log keamanan dari berbagai sumber seperti server, perangkat jaringan, aplikasi, database, endpoint, dan layanan cloud.</li>
+                <li><strong>Normalisasi dan Agregasi Data:</strong> Menstandardisasi format log dari berbagai sumber yang berbeda agar mudah dianalisis dan dikorelasikan. Agregasi data mengurangi volume data yang perlu dianalisis.</li>
+                <li><strong>Analisis dan Korelasi Peristiwa:</strong> Menganalisis log dan peristiwa secara real-time atau near real-time untuk mendeteksi pola serangan, anomali, dan aktivitas mencurigakan. Korelasi peristiwa menggabungkan informasi dari berbagai sumber untuk mengidentifikasi serangan kompleks.</li>
+                <li><strong>Deteksi Ancaman dan Peringatan (Alerting):</strong> Mengidentifikasi ancaman keamanan berdasarkan aturan deteksi yang telah ditentukan dan analisis anomali. Menghasilkan peringatan otomatis kepada tim keamanan ketika ancaman terdeteksi.</li>
+                <li><strong>Visualisasi dan Dashboard:</strong> Menyediakan dashboard visual yang interaktif untuk memantau status keamanan secara keseluruhan, tren ancaman, dan metrik kinerja keamanan.</li>
+                <li><strong>Manajemen Insiden dan Respons:</strong> Mendukung proses respons insiden dengan menyediakan informasi kontekstual, alat investigasi, dan kemampuan pelaporan. Integrasi dengan sistem ticketing atau SOAR (Security Orchestration, Automation and Response) seringkali tersedia.</li>
+                <li><strong>Pelaporan dan Kepatuhan:</strong> Menghasilkan laporan keamanan untuk audit kepatuhan, manajemen risiko, dan pelaporan kepada manajemen. Membantu memenuhi persyaratan kepatuhan seperti PCI DSS, HIPAA, GDPR, dan lainnya.</li>
+                <li><strong>Analisis Forensik:</strong> Menyediakan data historis dan alat analisis untuk investigasi forensik setelah insiden keamanan terjadi.</li>
+            </ul>
+        </section>
+
+        <!-- How SIEM Works Section -->
+        <section id="how-works" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Kerja SIEM</h2>
+            <p class="text-gray-300 mb-4">SIEM bekerja melalui serangkaian tahapan untuk mengumpulkan, menganalisis, dan merespons peristiwa keamanan:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Pengumpulan Data (Data Collection):</strong>
+                    <p class="mt-2 text-gray-300">SIEM mengumpulkan data log dan peristiwa keamanan dari berbagai sumber di seluruh infrastruktur TI. Sumber data umum meliputi:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Log Sistem Operasi:</strong> Log dari server, workstation, dan endpoint yang mencatat aktivitas sistem dan aplikasi.</li>
+                        <li><strong>Log Aplikasi:</strong> Log dari aplikasi web, database, dan aplikasi bisnis lainnya.</li>
+                        <li><strong>Log Keamanan Perangkat Jaringan:</strong> Log dari firewall, router, switch, IDS/IPS, WAF, dan perangkat keamanan lainnya.</li>
+                        <li><strong>Log Kontrol Akses dan Otentikasi:</strong> Log dari sistem otentikasi, direktori aktif, dan sistem manajemen identitas.</li>
+                        <li><strong>Data Ancaman Eksternal (Threat Intelligence Feeds):</strong> Informasi tentang ancaman terbaru, indikator kompromi (IOCs), dan reputasi IP/domain dari sumber eksternal.</li>
+                    </ul>
+                </li>
+                <li><strong>Normalisasi dan Parsing Data (Data Normalization and Parsing):</strong>
+                    <p class="mt-2 text-gray-300">Data log dari berbagai sumber seringkali memiliki format yang berbeda. SIEM melakukan normalisasi dan parsing data untuk mengubahnya menjadi format yang seragam dan mudah dianalisis. Parsing memecah data log menjadi field-field yang terstruktur.</p>
+                </li>
+                <li><strong>Penyimpanan Data (Data Storage):</strong>
+                    <p class="mt-2 text-gray-300">Data log yang telah dinormalisasi disimpan dalam database SIEM untuk analisis historis, pelaporan, dan forensik. Solusi SIEM modern sering menggunakan penyimpanan data yang scalable untuk menangani volume data yang besar.</p>
+                </li>
+                <li><strong>Analisis dan Korelasi (Analysis and Correlation):</strong>
+                    <p class="mt-2 text-gray-300">Mesin analisis SIEM menganalisis data log untuk mendeteksi ancaman keamanan. Analisis dapat dilakukan dengan:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Rule-based Correlation:</strong> Menerapkan aturan korelasi yang telah ditentukan untuk mencari pola peristiwa yang mencurigakan (misalnya, "Jika ada login gagal berulang kali dari IP yang sama diikuti oleh login berhasil, maka berikan peringatan brute-force").</li>
+                        <li><strong>Anomaly Detection:</strong> Menggunakan algoritma machine learning untuk mempelajari perilaku normal sistem dan aplikasi, dan mendeteksi penyimpangan dari perilaku normal yang mungkin mengindikasikan serangan.</li>
+                        <li><strong>Threat Intelligence Integration:</strong> Membandingkan data log dengan indikator ancaman yang diketahui dari threat intelligence feeds untuk mengidentifikasi ancaman yang relevan.</li>
+                    </ul>
+                </li>
+                <li><strong>Peringatan dan Respons (Alerting and Response):</strong>
+                    <p class="mt-2 text-gray-300">Ketika ancaman atau aktivitas mencurigakan terdeteksi, SIEM menghasilkan peringatan (alerts) kepada tim keamanan. Peringatan dapat dikirim melalui email, SMS, atau integrasi dengan sistem ticketing. Beberapa solusi SIEM terintegrasi dengan SOAR untuk otomatisasi respons insiden dasar.</p>
+                </li>
+                <li><strong>Visualisasi dan Pelaporan (Visualization and Reporting):</strong>
+                    <p class="mt-2 text-gray-300">SIEM menyediakan dashboard dan laporan yang visual untuk memantau keamanan secara real-time, menganalisis tren ancaman, dan menghasilkan laporan kepatuhan. Dashboard memungkinkan tim keamanan untuk dengan cepat memahami postur keamanan dan fokus pada area yang memerlukan perhatian.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Benefits of Using SIEM Section -->
+        <section id="benefits" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Manfaat Menggunakan SIEM</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Deteksi Ancaman yang Ditingkatkan:</strong> Mendeteksi ancaman keamanan yang kompleks dan tersembunyi dengan analisis data dari berbagai sumber.</li>
+                <li><strong>Respons Insiden yang Lebih Cepat:</strong> Mempercepat deteksi dan respons terhadap insiden keamanan, mengurangi dampak dan kerugian.</li>
+                <li><strong>Visibilitas Keamanan Terpusat:</strong> Menyediakan pandangan terpusat terhadap postur keamanan organisasi, memudahkan pemantauan dan manajemen keamanan.</li>
+                <li><strong>Kepatuhan Regulasi yang Disederhanakan:</strong> Memudahkan pemenuhan persyaratan kepatuhan dengan pelaporan dan audit log yang otomatis.</li>
+                <li><strong>Analisis Forensik yang Efektif:</strong> Memfasilitasi investigasi forensik dengan data log historis dan alat analisis yang kuat.</li>
+                <li><strong>Efisiensi Operasi Keamanan:</strong> Mengotomatiskan tugas-tugas pemantauan dan analisis keamanan, meningkatkan efisiensi tim keamanan.</li>
+                <li><strong>Manajemen Risiko yang Lebih Baik:</strong> Membantu organisasi memahami dan mengelola risiko keamanan dengan lebih baik melalui visibilitas ancaman dan tren keamanan.</li>
+            </ul>
+        </section>
+
+        <!-- How to Use SIEM Section -->
+        <section id="how-to-use" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Menggunakan SIEM (Umum)</h2>
+            <p class="text-gray-300 mb-4">Menggunakan SIEM secara efektif melibatkan perencanaan, implementasi, konfigurasi, dan operasi berkelanjutan:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Perencanaan dan Definisi Kebutuhan:</strong>
+                    <p class="mt-2 text-gray-300">Tentukan tujuan penggunaan SIEM, cakupan infrastruktur yang akan dipantau, persyaratan kepatuhan, dan jenis ancaman yang paling relevan. Identifikasi sumber data log yang kritikal.</p>
+                </li>
+                <li><strong>Pemilihan Solusi SIEM:</strong>
+                    <p class="mt-2 text-gray-300">Pilih solusi SIEM yang sesuai dengan kebutuhan organisasi, anggaran, dan skala infrastruktur. Pertimbangkan faktor-faktor seperti jenis deployment (on-premise, cloud, hybrid), fitur, skalabilitas, integrasi, dan dukungan vendor. Bandingkan solusi komersial dan open-source.</p>
+                </li>
+                <li><strong>Implementasi dan Deployment SIEM:</strong>
+                    <p class="mt-2 text-gray-300">Deploy solusi SIEM sesuai dengan panduan vendor. Ini mungkin melibatkan instalasi perangkat keras/lunak, konfigurasi server SIEM, dan koneksi ke sumber data log. Untuk Cloud SIEM, proses deployment biasanya lebih sederhana.</p>
+                </li>
+                <li><strong>Konfigurasi Sumber Data Log:</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan setiap sumber data log (server, perangkat jaringan, aplikasi, dll.) untuk mengirim log keamanan ke SIEM. Ini mungkin melibatkan konfigurasi agen log, syslog, atau API integrasi. Pastikan semua sumber data yang relevan terintegrasi.</p>
+                </li>
+                <li><strong>Konfigurasi Aturan Deteksi dan Korelasi:</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan aturan deteksi ancaman dan korelasi peristiwa di SIEM. Gunakan aturan default yang disediakan oleh vendor dan kembangkan aturan khusus yang sesuai dengan risiko dan kebutuhan organisasi. Fine-tune aturan untuk mengurangi false positive.</p>
+                </li>
+                <li><strong>Pengaturan Peringatan (Alerting):</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan mekanisme peringatan (alerting) untuk memberitahu tim keamanan ketika ancaman terdeteksi. Atur ambang batas peringatan, prioritas, dan metode notifikasi (email, SMS, integrasi ticketing).</p>
+                </li>
+                <li><strong>Pengembangan Dashboard dan Pelaporan:</strong>
+                    <p class="mt-2 text-gray-300">Kustomisasi dashboard SIEM untuk memvisualisasikan metrik keamanan yang relevan dan status keamanan secara keseluruhan. Buat laporan keamanan rutin dan laporan kepatuhan sesuai kebutuhan.</p>
+                </li>
+                <li><strong>Pelatihan Tim Keamanan:</strong>
+                    <p class="mt-2 text-gray-300">Latih tim keamanan untuk menggunakan SIEM secara efektif, termasuk pemantauan dashboard, analisis peringatan, investigasi insiden, dan penggunaan fitur-fitur SIEM lainnya.</p>
+                </li>
+                <li><strong>Pemantauan dan Analisis Berkelanjutan:</strong>
+                    <p class="mt-2 text-gray-300">Pantau dashboard SIEM secara teratur, analisis peringatan keamanan, dan lakukan investigasi insiden. Tinjau dan perbarui aturan deteksi dan konfigurasi SIEM secara berkala untuk beradaptasi dengan ancaman baru dan perubahan infrastruktur.</p>
+                </li>
+                <li><strong>Integrasi dengan Proses Respons Insiden:</strong>
+                    <p class="mt-2 text-gray-300">Integrasikan SIEM dengan proses respons insiden organisasi. Gunakan SIEM sebagai alat utama untuk deteksi, investigasi, dan pelacakan insiden keamanan. Pertimbangkan integrasi dengan SOAR untuk otomatisasi respons.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Popular SIEM Solutions Section -->
+        <section id="popular-siem" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Solusi SIEM Populer</h2>
+            <p class="text-gray-300 mb-4">Berikut adalah beberapa contoh solusi SIEM populer (baik komersial maupun open-source):</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Splunk Enterprise Security (Commercial):</strong> Salah satu solusi SIEM terkemuka di pasar, dikenal dengan kemampuan analisis data yang kuat dan fleksibilitas.</li>
+                <li><strong>IBM QRadar SIEM (Commercial):</strong> Solusi SIEM enterprise dari IBM, menawarkan deteksi ancaman canggih dan integrasi dengan ekosistem IBM Security.</li>
+                <li><strong>Microsoft Sentinel (Cloud-based, Commercial):</strong> Solusi Cloud SIEM dari Microsoft Azure, terintegrasi dengan layanan Azure dan Microsoft 365.</li>
+                <li><strong>LogRhythm NextGen SIEM Platform (Commercial):</strong> Platform SIEM generasi berikutnya yang fokus pada deteksi ancaman dan respons otomatis.</li>
+                <li><strong>AlienVault USM (Unified Security Management) (Commercial):</strong> Solusi USM yang mencakup SIEM, IDS, vulnerability scanning, dan lainnya dalam satu platform.</li>
+                <li><strong>ELK Stack (Elasticsearch, Logstash, Kibana) (Open Source):</strong> Stack open-source yang populer untuk log management dan analisis, sering digunakan sebagai dasar untuk membangun solusi SIEM custom.</li>
+                <li><strong>Graylog (Open Source & Commercial):</strong> Solusi open-source dan komersial untuk log management dan SIEM, fokus pada kemudahan penggunaan dan skalabilitas.</li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://www.gartner.com/en/documents/4008830" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Gartner Magic Quadrant for Security Information and Event Management (SIEM)</a> (Laporan analisis pasar SIEM dari Gartner)</li>
+                <li><a href="https://www.sans.org/reading-room/whitepapers/logging/security-information-event-management-siem-critical-security-control-33538" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">SANS Institute - Security Information & Event Management (SIEM): A Critical Security Control</a> (Whitepaper tentang SIEM dari SANS Institute)</li>
+                <li><a href="https://www.nist.gov/cybersecurity-insights/security-information-and-event-management-siem" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">NIST - Security Information and Event Management (SIEM)</a> (Informasi tentang SIEM dari NIST)</li>
+                <li>Dokumentasi resmi dari vendor SIEM yang Anda pilih (misalnya, Splunk, IBM, Microsoft, LogRhythm, AlienVault, Elastic, Graylog).</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

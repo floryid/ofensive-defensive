@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQLmap - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-blue-400">SQLmap</h2>
+            <p class="text-lg text-gray-300">Alat otomatis untuk deteksi dan eksploitasi kerentanan SQL injection.</p>
+            <img src="http://sqlmap.org/img/sqlmap-logo.png" alt="SQLmap Logo" class="mt-8 mx-auto w-64">
+        </section>
+
+        <!-- What is SQLmap Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Apa itu SQLmap?</h2>
+            <p class="text-gray-300 mb-4">SQLmap adalah alat pengujian penetrasi sumber terbuka yang mengotomatiskan proses deteksi dan eksploitasi kerentanan SQL injection. Dengan mesin deteksi yang kuat, SQLmap mendukung berbagai jenis teknik SQL injection, termasuk berbasis boolean, berbasis waktu, berbasis kesalahan, berbasis UNION query, berbasis stacked queries, dan out-of-band. SQLmap dapat digunakan untuk menguji berbagai sistem manajemen basis data (DBMS) seperti MySQL, PostgreSQL, Oracle, Microsoft SQL Server, dan banyak lagi.</p>
+            <p class="text-gray-300">SQLmap tidak hanya mendeteksi SQL injection, tetapi juga dapat digunakan untuk mengeksploitasi kerentanan tersebut. Setelah berhasil dieksploitasi, SQLmap dapat digunakan untuk mengambil database, menjalankan perintah sistem operasi, dan bahkan mendapatkan shell interaktif pada server database (dalam kondisi tertentu).</p>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Fitur Utama SQLmap</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Dukungan Penuh untuk Berbagai Teknik SQL Injection:</strong> Boolean-based blind, Time-based blind, Error-based, UNION query-based, Stacked queries, Out-of-band.</li>
+                <li><strong>Dukungan untuk Berbagai DBMS:</strong> MySQL, PostgreSQL, Oracle, Microsoft SQL Server, SQLite, Firebird, Sybase, SAP MaxDB, DB2, HSQLDB, Informix, dan lainnya.</li>
+                <li><strong>Dukungan untuk Berbagai Teknik Otentikasi:</strong> HTTP Basic, HTTP Digest, berbasis Cookie, berbasis NTLM, berbasis Kerberos, berbasis sertifikat.</li>
+                <li><strong>Kemampuan untuk Enumerasi Database:</strong> Enumerasi pengguna, password hash, hak akses, database, tabel, kolom.</li>
+                <li><strong>Kemampuan untuk Mengakses Sistem File Dasar:</strong> Mengunggah dan mengunduh file dari server database.</li>
+                <li><strong>Kemampuan untuk Menjalankan Perintah Sistem Operasi:</strong> Menjalankan perintah sistem operasi dan mendapatkan shell interaktif pada server database (jika DBMS mendukung).</li>
+                <li><strong>Dukungan untuk Pemindaian Kerentanan Otomatis:</strong> Otomatisasi proses deteksi dan eksploitasi SQL injection.</li>
+                <li><strong>Dukungan untuk Teknik Evasion IDS/IPS:</strong> Berbagai opsi untuk menghindari deteksi oleh sistem keamanan.</li>
+                <li><strong>API Komprehensif:</strong> API untuk integrasi dengan alat lain atau skrip otomatisasi.</li>
+            </ul>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Contoh Penggunaan SQLmap (Lengkap dan Detail)</h2>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Deteksi Dasar SQL Injection pada Parameter URL (GET):</strong>
+                    <p class="mb-2 text-gray-300">Uji apakah parameter GET rentan terhadap SQL Injection. Ini adalah kasus paling dasar.</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1"</code></pre>
+                    <p class="text-gray-300 italic mt-1">Perintah ini memberitahu SQLmap untuk menguji URL yang diberikan. SQLmap akan secara otomatis mencoba berbagai payload SQL Injection pada parameter 'id'.</p>
+                </li>
+
+                <li><strong>Deteksi SQL Injection pada Parameter POST Data:</strong>
+                    <p class="mb-2 text-gray-300">Uji SQL Injection pada parameter yang dikirim melalui metode POST (misalnya, form login).</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/login.php" --data "username=test&password=test"</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--data</code> digunakan untuk memberikan data POST. SQLmap akan menguji parameter 'username' dan 'password' untuk SQL Injection.</p>
+                </li>
+
+                <li><strong>Deteksi SQL Injection pada Cookie:</strong>
+                    <p class="mb-2 text-gray-300">Uji SQL Injection pada nilai cookie yang dikirim oleh server.</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/index.php" --cookie "TRACKID=abcde12345"</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--cookie</code> digunakan untuk menyertakan cookie dalam permintaan. SQLmap akan menguji nilai cookie 'TRACKID'.</p>
+                </li>
+
+                <li><strong>Deteksi Blind Time-Based SQL Injection:</strong>
+                    <p class="mb-2 text-gray-300">Uji Blind Time-Based SQL Injection, di mana tidak ada output langsung, tetapi respons server tertunda berdasarkan kondisi SQL.</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" --technique=T</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--technique=T</code> membatasi SQLmap untuk hanya menggunakan teknik Time-Based Blind SQL Injection. Teknik lain yang umum adalah <code>B</code> (Boolean-based blind), <code>E</code> (Error-based), <code>U</code> (UNION query-based).</p>
+                </li>
+
+                <li><strong>Enumerasi Database (Mendapatkan Daftar Database):</strong>
+                    <p class="mb-2 text-gray-300">Setelah menemukan SQL Injection, enumerasi database untuk mendapatkan daftar database yang tersedia.</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" --dbs</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--dbs</code> memberitahu SQLmap untuk melakukan enumerasi database dan menampilkan daftar database yang tersedia.</p>
+                </li>
+
+                <li><strong>Enumerasi Tabel dari Database Tertentu:</strong>
+                    <p class="mb-2 text-gray-300">Setelah mendapatkan daftar database, enumerasi tabel dari database tertentu (misalnya, database 'users').</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" -D users --tables</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>-D users</code> menentukan database target ('users'), dan <code>--tables</code> memberitahu SQLmap untuk menampilkan daftar tabel dalam database tersebut.</p>
+                </li>
+
+                <li><strong>Enumerasi Kolom dari Tabel Tertentu:</strong>
+                    <p class="mb-2 text-gray-300">Setelah mendapatkan daftar tabel, enumerasi kolom dari tabel tertentu (misalnya, tabel 'users' dan 'accounts').</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" -D users -T accounts --columns</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>-T accounts</code> menentukan tabel target ('accounts'), dan <code>--columns</code> memberitahu SQLmap untuk menampilkan daftar kolom dalam tabel tersebut.</p>
+                </li>
+
+                <li><strong>Dump Data dari Tabel Tertentu:</strong>
+                    <p class="mb-2 text-gray-300">Setelah mendapatkan daftar kolom, dump data dari tabel tertentu (misalnya, tabel 'users' dan 'accounts').</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" -D users -T accounts --dump</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--dump</code> memberitahu SQLmap untuk mendump semua data dari tabel yang ditentukan.</p>
+                </li>
+
+                <li><strong>Mendapatkan Password Hashes:</strong>
+                    <p class="mb-2 text-gray-300">Mencoba mendapatkan password hashes dari tabel pengguna (seringkali disimpan di kolom seperti 'password').</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" -D users -T accounts -C username,password --dump</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>-C username,password</code> menentukan kolom yang akan di-dump ('username' dan 'password').</p>
+                </li>
+
+                <li><strong>Menjalankan Perintah Sistem Operasi (Jika Memungkinkan):</strong>
+                    <p class="mb-2 text-gray-300">Jika DBMS dan konfigurasi memungkinkan, mencoba menjalankan perintah sistem operasi pada server database.</p>
+                    <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>sqlmap -u "http://example.com/vuln.php?id=1" --os-shell</code></pre>
+                    <p class="text-gray-300 italic mt-1">Opsi <code>--os-shell</code> meminta SQLmap untuk mencoba mendapatkan shell sistem operasi. Ini mungkin tidak selalu berhasil tergantung pada DBMS dan hak akses.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Mulai Menggunakan SQLmap</h2>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Instalasi:</strong> Unduh dan instal SQLmap dari website resminya ([http://sqlmap.org/](http://sqlmap.org/)). SQLmap adalah program Python, jadi pastikan Python sudah terinstal di sistem Anda. Kali Linux dan Parrot OS sudah menyertakan SQLmap secara default.</li>
+                <li><strong>Buka Terminal/Command Prompt:</strong> Buka terminal (Linux/macOS) atau Command Prompt (Windows).</li>
+                <li><strong>Pelajari Perintah Dasar:</strong> Beberapa perintah dasar SQLmap:
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><code>sqlmap -u [URL]</code>: Uji SQL Injection pada URL.</li>
+                        <li><code>sqlmap -u [URL] --data "[POST data]"</code>: Uji SQL Injection dengan data POST.</li>
+                        <li><code>sqlmap -u [URL] --cookie "[cookie]"</code>: Uji SQL Injection dengan cookie.</li>
+                        <li><code>sqlmap -u [URL] --dbs</code>: Enumerasi database.</li>
+                        <li><code>sqlmap -u [URL] -D [database] --tables</code>: Enumerasi tabel dalam database.</li>
+                        <li><code>sqlmap -u [URL] -D [database] -T [table] --columns</code>: Enumerasi kolom dalam tabel.</li>
+                        <li><code>sqlmap -u [URL] -D [database] -T [table] --dump</code>: Dump data dari tabel.</li>
+                        <li><code>sqlmap -u [URL] --os-shell</code>: Mendapatkan OS shell (jika memungkinkan).</li>
+                        <li><code>sqlmap --help</code>: Menampilkan bantuan dan opsi SQLmap.</li>
+                    </ul>
+                </li>
+                <li><strong>Eksplorasi Opsi dan Teknik:</strong> Baca dokumentasi SQLmap dan coba berbagai opsi dan teknik untuk memahami kemampuan penuhnya.</li>
+                <li><strong>Gunakan dengan Etika:</strong> Gunakan SQLmap hanya untuk tujuan pembelajaran dan pengujian keamanan pada sistem yang Anda miliki izin untuk diuji. Penggunaan SQLmap tanpa izin adalah ilegal dan tidak etis.</li>
+            </ol>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="http://sqlmap.org/doc/README.html" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Dokumentasi Resmi SQLmap (README)</a></li>
+                <li><a href="https://github.com/sqlmapproject/sqlmap/wiki" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Wiki SQLmap di GitHub</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=sqlmap+tutorial" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Tutorial SQLmap di YouTube</a></li>
+                <li>Komunitas online dan forum keamanan web tempat pengguna SQLmap berbagi tips dan trik.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

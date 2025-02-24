@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Firewall (WAF) - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">Web Application Firewall (WAF)</h2>
+            <p class="text-lg text-gray-300">Garis pertahanan terdepan untuk melindungi aplikasi web dari berbagai serangan siber.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 mx-auto text-green-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0H3.75v16.5H16.5V3.75z" />
+            </svg>
+        </section>
+
+        <!-- What is WAF Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Apa itu Web Application Firewall (WAF)?</h2>
+            <p class="text-gray-300 mb-4">Web Application Firewall (WAF) adalah perangkat keamanan yang melindungi aplikasi web dengan memfilter dan memantau lalu lintas HTTP antara aplikasi web dan internet. WAF bekerja pada lapisan aplikasi (Layer 7 dalam model OSI) dan menganalisis lalu lintas aplikasi web untuk mendeteksi dan memblokir serangan yang mungkin mencoba mengeksploitasi kerentanan dalam aplikasi.</p>
+            <p class="text-gray-300 mb-4">WAF berbeda dari firewall jaringan tradisional. Firewall jaringan berfokus pada keamanan jaringan secara luas dan mengontrol akses berdasarkan alamat IP dan port. WAF, di sisi lain, memahami logika aplikasi web dan dapat melindungi dari serangan yang lebih kompleks dan spesifik aplikasi, seperti SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), dan lainnya.</p>
+            <p class="text-gray-300">WAF adalah komponen penting dalam strategi keamanan web modern, membantu organisasi menjaga aplikasi web mereka tetap aman dan tersedia.</p>
+        </section>
+
+        <!-- Types of WAF Section -->
+        <section id="types" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Jenis-Jenis WAF</h2>
+            <p class="text-gray-300 mb-4">WAF dapat diklasifikasikan berdasarkan cara implementasi dan penyebarannya:</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Network-based WAF:</strong> Biasanya diimplementasikan sebagai perangkat keras (appliance) yang dipasang di jaringan. Network-based WAF menawarkan performa tinggi dan latensi rendah, tetapi membutuhkan investasi awal yang signifikan dan pemeliharaan perangkat keras.</li>
+                <li><strong>Host-based WAF:</strong> Diintegrasikan langsung ke dalam infrastruktur server aplikasi. Host-based WAF lebih fleksibel dan dapat disesuaikan dengan aplikasi spesifik, tetapi dapat membebani sumber daya server dan lebih sulit dikelola untuk banyak server.</li>
+                <li><strong>Cloud-based WAF:</strong> Disediakan sebagai layanan cloud oleh vendor keamanan. Cloud-based WAF menawarkan kemudahan implementasi, skalabilitas, dan pembaruan aturan keamanan otomatis. Model ini biasanya berbasis langganan dan cocok untuk berbagai skala aplikasi.</li>
+            </ul>
+        </section>
+
+        <!-- How WAF Works Section -->
+        <section id="how-works" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Kerja WAF</h2>
+            <p class="text-gray-300 mb-4">WAF bekerja dengan menganalisis lalu lintas HTTP/HTTPS yang masuk dan keluar dari aplikasi web. Mekanisme utama WAF meliputi:</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Rule-based Filtering (Positive and Negative Security Models):</strong>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Positive Security Model (Whitelisting):</strong> Hanya lalu lintas yang sesuai dengan aturan yang diizinkan yang diteruskan. Semua lalu lintas lain diblokir. Efektif untuk aplikasi dengan perilaku yang sangat terdefinisi.</li>
+                        <li><strong>Negative Security Model (Blacklisting):</strong> Lalu lintas yang cocok dengan pola serangan yang dikenal diblokir. Semua lalu lintas lain diizinkan secara default. Lebih umum digunakan karena lebih fleksibel dan mudah diimplementasikan.</li>
+                    </ul>
+                </li>
+                <li><strong>Signature-based Detection:</strong> Mencari pola serangan yang dikenal (signatures) dalam lalu lintas web. Database signature harus selalu diperbarui untuk mendeteksi ancaman terbaru.</li>
+                <li><strong>Anomaly Detection:</strong> Mengidentifikasi perilaku lalu lintas yang tidak biasa atau menyimpang dari pola normal aplikasi. Anomaly detection dapat mendeteksi serangan zero-day atau serangan yang tidak dikenal oleh signature.</li>
+                <li><strong>Rate Limiting:</strong> Membatasi jumlah permintaan dari alamat IP tertentu dalam periode waktu tertentu. Rate limiting efektif untuk mencegah serangan brute-force dan DDoS lapisan aplikasi.</li>
+                <li><strong>Input Validation:</strong> Memastikan bahwa input pengguna (misalnya, dari form) sesuai dengan format dan aturan yang diharapkan. Input validation membantu mencegah serangan injection.</li>
+            </ul>
+        </section>
+
+        <!-- Benefits of Using WAF Section -->
+        <section id="benefits" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Manfaat Menggunakan WAF</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Perlindungan dari Serangan Lapisan Aplikasi:</strong> Melindungi dari serangan seperti SQL Injection, XSS, CSRF, dan lainnya yang menargetkan aplikasi web.</li>
+                <li><strong>Patching Virtual:</strong> Memberikan perlindungan instan terhadap kerentanan aplikasi, bahkan sebelum patch resmi tersedia dari pengembang aplikasi.</li>
+                <li><strong>Perlindungan DDoS Lapisan Aplikasi:</strong> Membantu memitigasi serangan DDoS yang menargetkan lapisan aplikasi dengan teknik seperti rate limiting dan challenge-response.</li>
+                <li><strong>Kepatuhan Regulasi:</strong> Membantu organisasi memenuhi persyaratan kepatuhan seperti PCI DSS yang mewajibkan perlindungan aplikasi web.</li>
+                <li><strong>Visibilitas dan Logging:</strong> Memberikan visibilitas ke dalam lalu lintas aplikasi web dan mencatat aktivitas mencurigakan untuk analisis dan respons insiden.</li>
+                <li><strong>Kustomisasi Keamanan:</strong> Memungkinkan konfigurasi aturan keamanan yang disesuaikan dengan kebutuhan spesifik aplikasi web.</li>
+            </ul>
+        </section>
+
+        <!-- How to Use a WAF Section -->
+        <section id="how-to-use" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Menggunakan WAF (Umum)</h2>
+            <p class="text-gray-300 mb-4">Penggunaan WAF melibatkan beberapa langkah umum, meskipun detailnya dapat bervariasi tergantung pada jenis dan solusi WAF yang Anda pilih:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Pilih Solusi WAF yang Tepat:</strong>
+                    <p class="mt-2 text-gray-300">Pertimbangkan jenis aplikasi web Anda, infrastruktur, anggaran, dan kebutuhan keamanan. Pilih jenis WAF (Network-based, Host-based, atau Cloud-based) yang paling sesuai. Bandingkan berbagai vendor dan solusi WAF berdasarkan fitur, performa, dan dukungan.</p>
+                </li>
+                <li><strong>Implementasi atau Deploy WAF:</strong>
+                    <p class="mt-2 text-gray-300"><strong>Untuk Network-based WAF:</strong> Instal appliance WAF di jaringan Anda, biasanya di depan aplikasi web server. Konfigurasikan jaringan untuk mengarahkan lalu lintas web melalui WAF.</p>
+                    <p class="mt-2 text-gray-300"><strong>Untuk Host-based WAF:</strong> Instal perangkat lunak WAF pada server aplikasi web Anda. Konfigurasikan WAF untuk berintegrasi dengan web server dan aplikasi Anda.</p>
+                    <p class="mt-2 text-gray-300"><strong>Untuk Cloud-based WAF:</strong> Daftar layanan Cloud WAF dengan vendor pilihan Anda. Ubah konfigurasi DNS aplikasi web Anda untuk mengarahkan lalu lintas melalui infrastruktur Cloud WAF vendor.</p>
+                </li>
+                <li><strong>Konfigurasi Kebijakan Keamanan (Security Policies):</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan kebijakan keamanan WAF. Ini termasuk:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Mengaktifkan Aturan Dasar:</strong> Aktifkan aturan keamanan default yang disediakan oleh WAF untuk perlindungan umum (misalnya, aturan OWASP Top 10).</li>
+                        <li><strong>Kustomisasi Aturan:</strong> Sesuaikan aturan keamanan untuk aplikasi web spesifik Anda. Buat aturan khusus untuk menangani kerentanan unik atau kebutuhan aplikasi Anda.</li>
+                        <li><strong>Mengatur Mode Operasi:</strong> Pilih mode operasi WAF (misalnya, mode deteksi saja, mode pencegahan, mode pembelajaran). Mode pembelajaran membantu WAF mempelajari perilaku aplikasi sebelum menerapkan pencegahan aktif.</li>
+                        <li><strong>Konfigurasi Whitelist dan Blacklist:</strong> Buat daftar putih untuk lalu lintas yang selalu diizinkan dan daftar hitam untuk lalu lintas yang selalu diblokir (jika diperlukan).</li>
+                    </ul>
+                </li>
+                <li><strong>Fine-tuning dan Optimasi:</strong>
+                    <p class="mt-2 text-gray-300">Setelah implementasi awal, WAF perlu di-fine-tune untuk mengurangi false positive (peringatan palsu) dan false negative (serangan yang lolos). Monitor log WAF secara teratur dan analisis peringatan keamanan. Sesuaikan aturan dan kebijakan berdasarkan hasil analisis dan perilaku aplikasi yang sebenarnya.</p>
+                </li>
+                <li><strong>Pengujian dan Pemantauan Berkelanjutan:</strong>
+                    <p class="mt-2 text-gray-300">Lakukan pengujian penetrasi dan pemindaian kerentanan secara teratur untuk memvalidasi efektivitas WAF. Pantau kinerja WAF dan lalu lintas aplikasi web secara berkelanjutan. Tetapkan proses untuk merespons peringatan keamanan WAF dan insiden keamanan yang terdeteksi.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Popular WAF Solutions Section -->
+        <section id="popular-waf" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Solusi WAF Populer</h2>
+            <p class="text-gray-300 mb-4">Berikut adalah beberapa contoh solusi WAF populer (baik komersial maupun open-source):</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Cloudflare WAF (Cloud-based, Commercial):</strong> Salah satu solusi Cloud WAF paling populer dengan jaringan CDN global dan fitur keamanan yang komprehensif.</li>
+                <li><strong>AWS WAF (Cloud-based, Commercial):</strong> WAF yang terintegrasi dengan layanan AWS, menawarkan fleksibilitas dan skalabilitas.</li>
+                <li><strong>Azure Web Application Firewall (Cloud-based, Commercial):</strong> Solusi WAF dari Microsoft Azure, terintegrasi dengan layanan Azure lainnya.</li>
+                <li><strong>F5 Advanced WAF (Network-based & Virtual Appliance, Commercial):</strong> Solusi WAF appliance yang kuat dengan fitur keamanan tingkat lanjut.</li>
+                <li><strong>ModSecurity (Host-based & Cloud-based, Open Source):</strong> WAF open-source yang sangat populer, dapat diintegrasikan dengan web server seperti Apache dan Nginx. Sering digunakan sebagai dasar untuk Cloud WAF komersial.</li>
+                <li><strong>OWASP ModSecurity Core Rule Set (CRS) (Ruleset, Open Source):</strong> Kumpulan aturan deteksi serangan open-source yang dapat digunakan dengan ModSecurity atau WAF lain yang kompatibel.</li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">OWASP Top 10</a> (Daftar 10 risiko keamanan aplikasi web teratas)</li>
+                <li><a href="https://owasp.org/www-project-modsecurity-core-rule-set/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">OWASP ModSecurity Core Rule Set (CRS)</a> (Aturan deteksi serangan open-source untuk WAF)</li>
+                <li><a href="https://portswigger.net/web-security/waf" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">PortSwigger Web Security Academy - Web Application Firewalls</a> (Materi pembelajaran tentang WAF)</li>
+                <li>Dokumentasi resmi dari vendor WAF yang Anda pilih (misalnya, Cloudflare, AWS, Azure, F5, ModSecurity).</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

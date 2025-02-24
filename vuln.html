@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerability Scanner - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">Vulnerability Scanner</h2>
+            <p class="text-lg text-gray-300">Alat penting untuk identifikasi proaktif kerentanan keamanan dalam sistem, jaringan, dan aplikasi.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 mx-auto text-green-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </section>
+
+        <!-- What is Vulnerability Scanner Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Apa itu Vulnerability Scanner?</h2>
+            <p class="text-gray-300 mb-4">Vulnerability scanner adalah perangkat lunak yang dirancang untuk secara otomatis memindai sistem komputer, jaringan, dan aplikasi untuk mengidentifikasi kerentanan keamanan yang diketahui. Alat ini bekerja dengan cara mensimulasikan serangan atau memeriksa konfigurasi sistem terhadap database kerentanan yang terus diperbarui.</p>
+            <p class="text-gray-300 mb-4">Tujuan utama vulnerability scanner adalah untuk membantu organisasi secara proaktif menemukan dan memperbaiki kerentanan keamanan sebelum dieksploitasi oleh penyerang. Dengan pemindaian rutin, organisasi dapat memahami postur keamanan mereka, memprioritaskan perbaikan kerentanan, dan mengurangi risiko serangan siber.</p>
+            <p class="text-gray-300">Vulnerability scanner adalah komponen penting dalam program manajemen kerentanan dan praktik keamanan siber yang baik.</p>
+        </section>
+
+        <!-- Types of Vulnerability Scanners Section -->
+        <section id="types" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Jenis-Jenis Vulnerability Scanner</h2>
+            <p class="text-gray-300 mb-4">Vulnerability scanner dapat diklasifikasikan berdasarkan target pemindaian dan metode deployment:</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Network Vulnerability Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Memindai jaringan dan perangkat jaringan (seperti router, switch, firewall) untuk kerentanan. Network scanner seringkali melakukan port scanning, service version detection, dan vulnerability assessment jaringan.</p>
+                </li>
+                <li><strong>Web Application Vulnerability Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Memindai aplikasi web untuk kerentanan spesifik aplikasi web, seperti SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), dan konfigurasi keamanan yang salah.</p>
+                </li>
+                <li><strong>Host-based Vulnerability Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Diinstal pada host individu (server, workstation, endpoint) untuk memindai kerentanan pada sistem operasi, aplikasi yang terinstal, konfigurasi keamanan lokal, dan patch yang hilang.</p>
+                </li>
+                <li><strong>Database Vulnerability Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Memindai sistem database untuk kerentanan konfigurasi, kelemahan otentikasi, hak akses yang berlebihan, dan kerentanan perangkat lunak database.</p>
+                </li>
+                <li><strong>Cloud Vulnerability Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Dirancang untuk memindai infrastruktur dan layanan cloud (seperti AWS, Azure, GCP) untuk kerentanan konfigurasi cloud, kesalahan konfigurasi keamanan, dan kerentanan layanan cloud.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- How Vulnerability Scanner Works Section -->
+        <section id="how-works" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Kerja Vulnerability Scanner</h2>
+            <p class="text-gray-300 mb-4">Vulnerability scanner bekerja melalui serangkaian langkah untuk mengidentifikasi kerentanan:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Target Definition:</strong>
+                    <p class="mt-2 text-gray-300">Pengguna mendefinisikan target pemindaian, yang bisa berupa alamat IP, rentang IP, hostname, URL aplikasi web, atau daftar host.</p>
+                </li>
+                <li><strong>Discovery Phase:</strong>
+                    <p class="mt-2 text-gray-300">Scanner melakukan penemuan target untuk mengidentifikasi host yang aktif, port terbuka, layanan yang berjalan, dan sistem operasi yang digunakan. Untuk web application scanner, fase ini mungkin melibatkan *crawling* aplikasi web untuk memetakan semua halaman dan fungsi.</p>
+                </li>
+                <li><strong>Vulnerability Scanning:</strong>
+                    <p class="mt-2 text-gray-300">Scanner melakukan pemindaian kerentanan aktual dengan menggunakan berbagai teknik:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Port Scanning:</strong> Mengidentifikasi port TCP dan UDP yang terbuka pada target.</li>
+                        <li><strong>Service Version Detection:</strong> Menentukan versi layanan yang berjalan pada port terbuka.</li>
+                        <li><strong>Vulnerability Checks:</strong> Menggunakan database kerentanan (seperti CVE - Common Vulnerabilities and Exposures) dan teknik pengujian kerentanan (seperti mengirim payload serangan yang dikenal) untuk mencari kerentanan yang diketahui terkait dengan layanan dan versi yang terdeteksi.</li>
+                        <li><strong>Web Application Scanning Techniques:</strong> Untuk web application scanner, ini mungkin melibatkan pengujian untuk SQL Injection, XSS, CSRF, parameter tampering, dan kerentanan aplikasi web lainnya.</li>
+                        <li><strong>Configuration Audits:</strong> Memeriksa konfigurasi sistem dan aplikasi terhadap *best practices* keamanan dan *security hardening guides*.</li>
+                    </ul>
+                </li>
+                <li><strong>Reporting:</strong>
+                    <p class="mt-2 text-gray-300">Setelah pemindaian selesai, scanner menghasilkan laporan yang merinci kerentanan yang ditemukan. Laporan biasanya mencakup:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li>Daftar kerentanan yang teridentifikasi.</li>
+                        <li>Deskripsi setiap kerentanan.</li>
+                        <li>Tingkat keparahan (severity level) atau risiko kerentanan.</li>
+                        <li>Informasi teknis tentang kerentanan (CVE ID, deskripsi teknis).</li>
+                        <li>Rekomendasi perbaikan (remediation) atau mitigasi untuk setiap kerentanan.</li>
+                        <li>Bukti atau detail teknis yang mendukung temuan kerentanan.</li>
+                    </ul>
+                </li>
+                <li><strong>Vulnerability Management Integration (Opsional):</strong>
+                    <p class="mt-2 text-gray-300">Beberapa vulnerability scanner terintegrasi dengan sistem manajemen kerentanan untuk otomatisasi alur kerja perbaikan kerentanan, pelacakan status perbaikan, dan pelaporan tren kerentanan dari waktu ke waktu.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Benefits of Using Vulnerability Scanner Section -->
+        <section id="benefits" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Manfaat Menggunakan Vulnerability Scanner</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Identifikasi Kerentanan Proaktif:</strong> Memungkinkan organisasi untuk secara proaktif menemukan kerentanan keamanan sebelum dieksploitasi oleh penyerang.</li>
+                <li><strong>Pengurangan Risiko Keamanan:</strong> Membantu mengurangi risiko serangan siber dengan memungkinkan perbaikan kerentanan yang tepat waktu.</li>
+                <li><strong>Prioritisasi Perbaikan:</strong> Membantu memprioritaskan upaya perbaikan kerentanan berdasarkan tingkat risiko dan keparahan.</li>
+                <li><strong>Otomatisasi Pemindaian:</strong> Mengotomatiskan proses pemindaian kerentanan, menghemat waktu dan sumber daya dibandingkan dengan pengujian manual.</li>
+                <li><strong>Kepatuhan Regulasi:</strong> Membantu memenuhi persyaratan kepatuhan seperti PCI DSS, HIPAA, dan lainnya yang mewajibkan pemindaian kerentanan rutin.</li>
+                <li><strong>Peningkatan Postur Keamanan:</strong> Meningkatkan postur keamanan organisasi secara keseluruhan dengan mengidentifikasi dan mengurangi kelemahan keamanan.</li>
+                <li><strong>Efisiensi Manajemen Kerentanan:</strong> Memudahkan manajemen kerentanan dengan pelaporan terpusat dan integrasi dengan sistem manajemen kerentanan.</li>
+            </ul>
+        </section>
+
+        <!-- How to Use Vulnerability Scanner Section -->
+        <section id="how-to-use" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Menggunakan Vulnerability Scanner (Umum)</h2>
+            <p class="text-gray-300 mb-4">Menggunakan vulnerability scanner secara efektif melibatkan langkah-langkah berikut:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Tentukan Lingkup Pemindaian:</strong>
+                    <p class="mt-2 text-gray-300">Tentukan aset atau sistem yang akan dipindai (jaringan, aplikasi web, host tertentu, cloud infrastructure). Definisikan rentang IP, URL, atau daftar host target.</p>
+                </li>
+                <li><strong>Pilih Jenis Pemindaian:</strong>
+                    <p class="mt-2 text-gray-300">Pilih jenis pemindaian yang sesuai dengan target dan tujuan Anda (misalnya, pemindaian jaringan dasar, pemindaian aplikasi web komprehensif, pemindaian host internal). Beberapa scanner menawarkan berbagai jenis pemindaian dengan tingkat kedalaman dan kecepatan yang berbeda.</p>
+                </li>
+                <li><strong>Konfigurasi Scanner:</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan scanner dengan parameter yang sesuai, seperti:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li>Kredensial otentikasi (jika diperlukan untuk pemindaian yang diautentikasi).</li>
+                        <li>Jenis kerentanan yang akan dicari.</li>
+                        <li>Intensitas pemindaian dan *performance tuning*.</li>
+                        <li>Opsi pelaporan dan format laporan.</li>
+                        <li>Jadwal pemindaian (untuk pemindaian rutin terjadwal).</li>
+                    </ul>
+                </li>
+                <li><strong>Jalankan Pemindaian:</strong>
+                    <p class="mt-2 text-gray-300">Jalankan pemindaian sesuai dengan konfigurasi yang telah ditentukan. Waktu pemindaian dapat bervariasi tergantung pada ukuran target, jenis pemindaian, dan performa scanner.</p>
+                </li>
+                <li><strong>Analisis Laporan Hasil Pemindaian:</strong>
+                    <p class="mt-2 text-gray-300">Setelah pemindaian selesai, analisis laporan hasil pemindaian. Perhatikan kerentanan yang teridentifikasi, tingkat keparahannya, dan rekomendasi perbaikan.</p>
+                </li>
+                <li><strong>Prioritisasi dan Remediasi Kerentanan:</strong>
+                    <p class="mt-2 text-gray-300">Prioritaskan perbaikan kerentanan berdasarkan tingkat risiko, keparahan, dan dampak potensial. Ikuti rekomendasi perbaikan yang diberikan dalam laporan scanner atau cari panduan perbaikan yang lebih detail. Lacak status perbaikan kerentanan.</p>
+                </li>
+                <li><strong>Pemindaian Ulang dan Verifikasi:</strong>
+                    <p class="mt-2 text-gray-300">Setelah perbaikan kerentanan dilakukan, jalankan pemindaian ulang untuk memverifikasi bahwa kerentanan telah berhasil diperbaiki. Pastikan untuk terus melakukan pemindaian rutin secara berkala untuk memantau keamanan secara berkelanjutan.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Popular Vulnerability Scanner Solutions Section -->
+        <section id="popular-vulnerability-scanner" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Solusi Vulnerability Scanner Populer</h2>
+            <p class="text-gray-300 mb-4">Berikut adalah beberapa contoh solusi vulnerability scanner populer (baik komersial maupun open-source):</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Nessus Professional (Commercial):</strong> Salah satu vulnerability scanner komersial paling populer dan komprehensif, menawarkan berbagai fitur dan dukungan platform yang luas.</li>
+                <li><strong>Qualys VMDR (Vulnerability Management, Detection and Response) (Commercial):</strong> Platform manajemen kerentanan berbasis cloud yang komprehensif dari Qualys.</li>
+                <li><strong>Rapid7 InsightVM (Commercial):</strong> Vulnerability management solution dari Rapid7, terintegrasi dengan platform Insight untuk deteksi dan respons ancaman.</li>
+                <li><strong>OpenVAS (Open Source):</strong> Vulnerability scanner open-source yang kuat, merupakan *fork* dari Nessus sebelum menjadi komersial.</li>
+                <li><strong>OWASP ZAP (Zed Attack Proxy) (Open Source):</strong> Web application vulnerability scanner open-source dari OWASP, populer untuk pengujian keamanan aplikasi web.</li>
+                <li><strong>Nikto (Open Source):</strong> Web server scanner open-source untuk mencari konfigurasi yang salah dan file/CGI yang berpotensi berbahaya.</li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://owasp.org/www-project-vulnerability-scanning-tools/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">OWASP - Vulnerability Scanning Tools</a> (Daftar dan informasi tentang vulnerability scanning tools dari OWASP)</li>
+                <li><a href="https://www.tenable.com/products/nessus" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi Nessus</a> (Commercial Vulnerability Scanner)</li>
+                <li><a href="https://www.qualys.com/vm/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi Qualys VMDR</a> (Commercial Vulnerability Management)</li>
+                <li><a href="https://www.rapid7.com/products/insightvm/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi Rapid7 InsightVM</a> (Commercial Vulnerability Management)</li>
+                <li><a href="http://www.openvas.org/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi OpenVAS</a> (Open Source Vulnerability Scanner)</li>
+                <li>Dokumentasi resmi dari vendor vulnerability scanner yang Anda pilih (misalnya, Nessus, Qualys, Rapid7, OpenVAS, OWASP ZAP, Nikto).</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

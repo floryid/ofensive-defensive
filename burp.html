@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burp Suite - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-blue-400">Burp Suite</h2>
+            <p class="text-lg text-gray-300">Platform pengujian keamanan aplikasi web terdepan di industri untuk profesional keamanan siber.</p>
+            <img src="https://portswigger.net/burp/assets/cms/burp-suite-logo-tm-lg.svg" alt="Burp Suite Logo" class="mt-8 mx-auto w-64">
+        </section>
+
+        <!-- What is Burp Suite Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Apa itu Burp Suite?</h2>
+            <p class="text-gray-300 mb-4">Burp Suite adalah platform perangkat lunak terintegrasi yang digunakan untuk melakukan pengujian keamanan aplikasi web. Dikembangkan oleh PortSwigger, Burp Suite menjadi standar industri untuk profesional keamanan yang melakukan pengujian penetrasi aplikasi web. Alat ini dirancang untuk membantu dalam setiap tahap pengujian, mulai dari pemetaan aplikasi dan analisis kerentanan hingga eksploitasi.</p>
+            <p class="text-gray-300 mb-4">Burp Suite hadir dalam beberapa edisi: Community Edition (gratis dengan fungsionalitas terbatas), Professional Edition (berbayar dengan fitur lengkap untuk penguji individu), dan Enterprise Edition (berbayar untuk tim dan organisasi besar). Edisi Professional dan Enterprise menawarkan fitur-fitur canggih seperti *scanner* otomatis, *intruder* yang lebih kuat, dan ekstensi.</p>
+            <p class="text-gray-300">Dengan antarmuka grafis yang intuitif dan berbagai alat yang terintegrasi, Burp Suite memungkinkan penguji keamanan untuk secara efektif menganalisis dan mengamankan aplikasi web modern.</p>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Fitur Utama Burp Suite</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Proxy:</strong> Memungkinkan pengguna untuk mencegat, melihat, dan memodifikasi lalu lintas HTTP/HTTPS antara browser dan aplikasi web. Ini adalah inti dari pengujian manual dengan Burp Suite.</li>
+                <li><strong>Scanner:</strong> (Hanya di edisi Professional dan Enterprise) Pemindai kerentanan web otomatis yang dapat menemukan berbagai jenis kerentanan keamanan seperti SQL Injection, XSS, CSRF, dan lainnya.</li>
+                <li><strong>Intruder:</strong> Alat yang sangat fleksibel untuk melakukan serangan otomatis seperti *fuzzing*, *brute-force*, dan *parameter guessing*.</li>
+                <li><strong>Repeater:</strong> Memungkinkan pengguna untuk menangkap dan memodifikasi permintaan HTTP, kemudian mengirimkannya kembali ke server berulang kali. Berguna untuk menguji kerentanan secara manual dan memvalidasi perbaikan.</li>
+                <li><strong>Sequencer:</strong> Alat untuk menganalisis kualitas kerandoman token sesi aplikasi, seperti cookie atau token CSRF.</li>
+                <li><strong>Decoder:</strong> Alat untuk melakukan encoding dan decoding data dalam berbagai format seperti URL, HTML, Base64, dan lainnya.</li>
+                <li><strong>Comparer:</strong> Alat untuk melakukan perbandingan visual antara dua buah data, berguna untuk menganalisis respons server yang berbeda.</li>
+                <li><strong>Extender:</strong> Memungkinkan pengguna untuk memperluas fungsionalitas Burp Suite dengan ekstensi (BApps) yang ditulis oleh komunitas atau pihak ketiga.</li>
+            </ul>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Contoh Penggunaan Burp Suite (Lengkap dan Detail)</h2>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Pengujian Kerentanan SQL Injection (dengan Burp Repeater):</strong>
+                    <p class="mb-2 text-gray-300">SQL Injection adalah kerentanan yang memungkinkan penyerang untuk menyisipkan perintah SQL berbahaya ke dalam query database. Berikut cara mengujinya dengan Burp Repeater:</p>
+                    <ol type="a" class="list-lower-alpha list-inside text-gray-300">
+                        <li><strong>Aktifkan Burp Proxy:</strong> Buka Burp Suite dan pastikan Proxy Intercept dalam keadaan "on". Konfigurasi browser Anda untuk menggunakan Burp Proxy (biasanya <code>127.0.0.1:8080</code>).</li>
+                        <li><strong>Akses Aplikasi Target:</strong> Buka browser dan navigasi ke halaman login atau halaman yang memiliki form input pada aplikasi web target Anda.</li>
+                        <li><strong>Tangkap Permintaan Login:</strong> Masukkan kredensial login yang valid (atau tidak valid) dan submit form. Burp Proxy akan menangkap permintaan POST yang dikirim ke server.</li>
+                        <li><strong>Kirim ke Repeater:</strong> Di Burp Proxy "HTTP history", klik kanan pada permintaan POST login dan pilih "Send to Repeater".</li>
+                        <li><strong>Modifikasi Permintaan di Repeater:</strong> Buka tab "Repeater". Anda akan melihat permintaan login. Cari parameter username atau password. Coba sisipkan payload SQL Injection sederhana, misalnya: <code>' OR '1'='1</code> setelah username. Contoh:
+                            <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>username=test' OR '1'='1&password=password</code></pre>
+                        </li>
+                        <li><strong>Kirim Permintaan yang Dimodifikasi:</strong> Klik tombol "Go" di Repeater untuk mengirim permintaan yang telah dimodifikasi ke server.</li>
+                        <li><strong>Analisis Respons:</strong> Perhatikan respons server di panel "Response". Cari indikasi SQL Injection seperti:
+                            <ul class="list-disc list-inside ml-6 mt-2">
+                                <li>Pesan error database (misalnya, error MySQL, error SQL Server).</li>
+                                <li>Perubahan respons yang tidak terduga (misalnya, login berhasil meskipun kredensial salah).</li>
+                                <li>Waktu respons yang lebih lama dari biasanya (untuk Blind SQL Injection).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Iterasi dan Eksplorasi:</strong> Jika ada indikasi SQL Injection, coba payload lain yang lebih canggih untuk mengeksploitasi kerentanan lebih lanjut.</li>
+                    </ol>
+                </li>
+
+                <li><strong>Pengujian Kerentanan Cross-Site Scripting (XSS) (dengan Burp Intruder):</strong>
+                    <p class="mb-2 text-gray-300">XSS memungkinkan penyerang menyuntikkan skrip berbahaya ke halaman web yang dilihat oleh pengguna lain. Berikut cara menguji XSS dengan Burp Intruder untuk fuzzing parameter:</p>
+                    <ol type="a" class="list-lower-alpha list-inside text-gray-300">
+                        <li><strong>Aktifkan Burp Proxy dan Akses Aplikasi:</strong> Seperti langkah 1-2 di atas, aktifkan Burp Proxy dan navigasi ke halaman yang memiliki input (misalnya, form pencarian).</li>
+                        <li><strong>Tangkap Permintaan dengan Input:</strong> Masukkan teks uji di form input dan submit. Tangkap permintaan (GET atau POST) di Burp Proxy "HTTP history".</li>
+                        <li><strong>Kirim ke Intruder:</strong> Klik kanan pada permintaan di "HTTP history" dan pilih "Send to Intruder".</li>
+                        <li><strong>Konfigurasi Posisi Payload di Intruder:</strong> Buka tab "Positions" di Intruder. Pilih parameter input (misalnya, parameter pencarian) yang ingin Anda fuzz. Klik "Add" untuk menambahkan posisi payload di parameter tersebut. Pilih mode serangan "Sniper".</li>
+                        <li><strong>Set Payload List:</strong> Buka tab "Payloads". Pilih "Simple list" sebagai payload type. Tambahkan daftar payload XSS yang umum, contoh:
+                            <pre class="bg-gray-800 p-2 rounded-md mt-2"><code><script>alert('XSS')</script>
+<img src=x onerror=alert('XSS')</img>
+<svg/onload=alert('XSS')</svg></code></pre>
+                        </li>
+                        <li><strong>Mulai Serangan:</strong> Buka tab "Options" (jika perlu, sesuaikan pengaturan seperti *threads*). Kembali ke tab "Positions" dan klik "Start attack".</li>
+                        <li><strong>Analisis Hasil Intruder:</strong> Setelah serangan selesai, buka tab "Results". Perhatikan kolom "Response". Cari respons dengan indikasi XSS, seperti:
+                            <ul class="list-disc list-inside ml-6 mt-2">
+                                <li>Kode status 200 OK (biasanya).</li>
+                                <li>Respons yang mengandung payload XSS Anda (periksa "Response body").</li>
+                                <li>Mungkin gunakan Burp Collaborator (di edisi Professional) untuk deteksi XSS yang lebih akurat (misalnya, *blind XSS*).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Verifikasi Manual di Browser:</strong> Jika Anda menemukan potensi XSS, verifikasi secara manual di browser. Salin URL dari permintaan yang mencurigakan di Intruder, buka di browser, dan lihat apakah skrip JavaScript dieksekusi (misalnya, muncul alert).</li>
+                    </ol>
+                </li>
+
+                <li><strong>Pengujian Otentikasi dan Otorisasi (dengan Burp Proxy dan Repeater):</strong>
+                    <p class="mb-2 text-gray-300">Uji bagaimana aplikasi mengelola otentikasi dan otorisasi. Contoh: bypass otentikasi atau akses sumber daya tanpa izin.</p>
+                    <ol type="a" class="list-lower-alpha list-inside text-gray-300">
+                        <li><strong>Aktifkan Proxy dan Login:</strong> Aktifkan Burp Proxy dan login ke aplikasi web dengan akun pengguna biasa.</li>
+                        <li><strong>Tangkap Permintaan Setelah Login:</strong> Setelah login berhasil, navigasi ke halaman yang memerlukan otentikasi (misalnya, halaman profil pengguna). Tangkap permintaan untuk halaman ini di Burp Proxy "HTTP history".</li>
+                        <li><strong>Ulangi Permintaan Tanpa Cookie/Sesi:</strong> Kirim permintaan yang ditangkap ke Burp Repeater. Di Repeater, hapus cookie sesi atau header otentikasi lainnya yang terkait dengan sesi login Anda.</li>
+                        <li><strong>Kirim Permintaan Tanpa Otentikasi:</strong> Klik "Go" di Repeater untuk mengirim permintaan tanpa informasi otentikasi.</li>
+                        <li><strong>Analisis Respons:</strong> Periksa respons server. Jika Anda masih dapat mengakses halaman yang seharusnya memerlukan otentikasi, ini indikasi *authentication bypass* atau masalah otorisasi. Respons yang diharapkan adalah *redirect* ke halaman login atau kode status 401 Unauthorized atau 403 Forbidden.</li>
+                        <li><strong>Uji Otorisasi dengan Akun Berbeda:</strong> Login dengan akun pengguna biasa, tangkap permintaan ke sumber daya. Kemudian, coba ulangi permintaan yang sama dengan cookie atau sesi dari akun pengguna lain (misalnya, akun dengan hak akses lebih rendah atau berbeda). Periksa apakah aplikasi dengan benar membatasi akses berdasarkan peran atau izin pengguna.</li>
+                    </ol>
+                </li>
+
+                <li><strong>Fuzzing Aplikasi Web untuk Input Validation Vulnerabilities (dengan Burp Intruder):</strong>
+                    <p class="mb-2 text-gray-300">Fuzzing adalah mengirimkan data acak atau tidak valid untuk mencari kesalahan penanganan input. Gunakan Intruder untuk fuzzing parameter form atau URL.</p>
+                    <ol type="a" class="list-lower-alpha list-inside text-gray-300">
+                        <li><strong>Aktifkan Proxy dan Tangkap Permintaan:</strong> Aktifkan Burp Proxy dan navigasi ke halaman web dengan form input. Isi form dengan data normal dan submit. Tangkap permintaan di Burp Proxy.</li>
+                        <li><strong>Kirim ke Intruder dan Konfigurasi Posisi:</strong> Kirim permintaan ke Burp Intruder. Di tab "Positions", pilih parameter input yang ingin Anda fuzz dan tambahkan posisi payload. Pilih mode serangan "Cluster bomb" atau "Battering ram" (sesuai kebutuhan).</li>
+                        <li><strong>Set Payload Lists:</strong> Buka tab "Payloads". Atur payload set 1 (dan set 2, jika mode "Cluster bomb") dengan daftar nilai fuzzing. Contoh payload fuzzing untuk input validation:
+                            <pre class="bg-gray-800 p-2 rounded-md mt-2"><code>(Daftar Payload 1: Nilai-nilai tidak valid)
+!@#$%^&*()_+
+<script>alert('fuzz')</script>
+... (dll. karakter khusus, string panjang, angka di luar batas, dll.)</code></pre>
+                        </li>
+                        <li><strong>Mulai Serangan dan Analisis Respons:</strong> Mulai serangan Intruder. Di tab "Results", perhatikan kolom "Response". Cari respons yang tidak biasa, error server (kode status 500), atau perbedaan dalam panjang respons. Ini bisa mengindikasikan masalah input validation, seperti *buffer overflow*, *format string vulnerabilities*, atau *denial of service*.</li>
+                    </ol>
+                </li>
+
+                <li><strong>Analisis Alur Kerja Aplikasi dan Pemetaan (dengan Burp Proxy dan Site map):</strong>
+                    <p class="mb-2 text-gray-300">Gunakan Burp Proxy untuk memetakan semua halaman dan fungsi aplikasi web. Site map membantu visualisasi struktur aplikasi.</p>
+                    <ol type="a" class="list-lower-alpha list-inside text-gray-300">
+                        <li><strong>Aktifkan Burp Proxy dan Jelajahi Aplikasi:</strong> Aktifkan Burp Proxy. Buka browser dan jelajahi seluruh aplikasi web target secara manual. Klik semua link, submit semua form, gunakan semua fungsi aplikasi.</li>
+                        <li><strong>Periksa Site map:</strong> Di Burp Suite, buka tab "Site map". Burp akan otomatis membuat peta situs aplikasi berdasarkan lalu lintas yang telah Anda proxy. Perhatikan:
+                            <ul class="list-disc list-inside ml-6 mt-2">
+                                <li>Struktur direktori aplikasi.</li>
+                                <li>Semua halaman dan sumber daya yang ditemukan.</li>
+                                <li>Parameter URL dan form.</li>
+                                <li>Teknologi yang mungkin digunakan (berdasarkan header respons).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Analisis HTTP History:</strong> Buka tab "HTTP history". Urutkan berdasarkan host atau path. Analisis permintaan dan respons untuk memahami alur kerja aplikasi, titik akhir API, jenis data yang dikirim/diterima, dan potensi kerentanan logika bisnis. Perhatikan respons yang tidak biasa, kode status error, atau informasi sensitif yang terungkap dalam respons.</li>
+                        <li><strong>Gunakan Scanner (Professional):</strong> Setelah pemetaan selesai, Anda dapat menggunakan Burp Scanner (di edisi Professional) untuk secara otomatis memindai seluruh aplikasi web yang telah dipetakan untuk berbagai kerentanan keamanan.</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Mulai Menggunakan Burp Suite</h2>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Unduh dan Instalasi:</strong> Unduh Burp Suite Community Edition (gratis) atau versi berbayar dari website resmi PortSwigger ([https://portswigger.net/burp](https://portswigger.net/burp)). Ikuti instruksi instalasi untuk sistem operasi Anda.</li>
+                <li><strong>Konfigurasi Proxy Browser:</strong> Konfigurasi browser web Anda untuk menggunakan Burp Proxy. Secara default, Burp Proxy berjalan di <code>http://127.0.0.1:8080</code>. Anda perlu mengatur pengaturan proxy browser Anda untuk mengarah ke alamat dan port ini.</li>
+                <li><strong>Akses Aplikasi Web Melalui Proxy:</strong> Buka aplikasi web yang ingin Anda uji melalui browser yang sudah dikonfigurasi proxy. Lalu lintas HTTP/HTTPS sekarang akan melalui Burp Suite.</li>
+                <li><strong>Mulai Pengujian:</strong> Gunakan alat-alat Burp Suite seperti Proxy, Repeater, Intruder, dll., untuk mulai menganalisis dan menguji aplikasi web. Mulailah dengan fitur Proxy untuk memahami bagaimana mencegat dan memodifikasi permintaan.</li>
+                <li><strong>Pelajari Fitur Lebih Lanjut:</strong> Jelajahi dokumentasi dan tutorial Burp Suite untuk mempelajari fitur-fitur yang lebih canggih dan cara menggunakannya secara efektif.</li>
+            </ol>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://portswigger.net/burp/documentation" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Dokumentasi Resmi Burp Suite</a></li>
+                <li><a href="https://portswigger.net/web-security" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">PortSwigger Web Security Academy</a> (Platform pembelajaran interaktif tentang keamanan web)</li>
+                <li><a href="https://www.youtube.com/c/PortSwigger" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Saluran YouTube PortSwigger</a> (Tutorial, Demo, dan Webinar)</li>
+                <li>Komunitas online dan forum keamanan web tempat pengguna Burp Suite berbagi tips dan trik.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

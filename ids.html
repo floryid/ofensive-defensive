@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS/IPS (Intrusion Detection/Prevention System) - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">IDS/IPS (Intrusion Detection/Prevention System)</h2>
+            <p class="text-lg text-gray-300">Benteng pertahanan jaringan untuk mendeteksi dan mencegah aktivitas mencurigakan dan serangan siber.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-24 h-24 mx-auto text-green-400">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
+        </section>
+
+        <!-- What is IDS/IPS Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Apa itu IDS/IPS?</h2>
+            <p class="text-gray-300 mb-4">Intrusion Detection System (IDS) dan Intrusion Prevention System (IPS) adalah teknologi keamanan jaringan yang digunakan untuk memantau lalu lintas jaringan dan aktivitas sistem untuk aktivitas berbahaya atau mencurigakan. Meskipun sering disebut bersamaan, IDS dan IPS memiliki fungsi dan pendekatan yang sedikit berbeda.</p>
+            <p class="text-gray-300 mb-4"><strong>Intrusion Detection System (IDS)</strong> berfokus pada **pendeteksian** ancaman. IDS secara pasif memantau lalu lintas jaringan, menganalisisnya untuk mencari pola serangan yang dikenal (signatures) atau perilaku anomali, dan memberikan peringatan (alerts) ketika aktivitas mencurigakan terdeteksi. IDS bersifat *pasif* karena ia hanya mendeteksi dan melaporkan, tetapi tidak secara aktif memblokir atau mencegah serangan.</p>
+            <p class="text-gray-300"><strong>Intrusion Prevention System (IPS)</strong> melangkah lebih jauh dengan **mencegah** serangan. IPS juga memantau dan menganalisis lalu lintas jaringan, tetapi jika mendeteksi aktivitas berbahaya, IPS dapat mengambil tindakan *aktif* untuk memblokir atau mencegah serangan tersebut secara *otomatis*. Tindakan ini bisa berupa memutus koneksi, memblokir alamat IP sumber, atau tindakan mitigasi lainnya.</p>
+        </section>
+
+        <!-- Types of IDS/IPS Section -->
+        <section id="types" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Jenis-Jenis IDS/IPS</h2>
+            <p class="text-gray-300 mb-4">IDS/IPS dapat diklasifikasikan berdasarkan metode deteksi dan penempatannya dalam jaringan:</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Network Intrusion Detection/Prevention System (NIDS/NIPS):</strong>
+                    <p class="mt-2 text-gray-300">Dipasang pada titik strategis dalam jaringan untuk memantau lalu lintas jaringan secara keseluruhan. NIDS/NIPS menganalisis lalu lintas jaringan yang melewati titik pemantauan dan mendeteksi ancaman yang menargetkan jaringan.</p>
+                </li>
+                <li><strong>Host-based Intrusion Detection/Prevention System (HIDS/HIPS):</strong>
+                    <p class="mt-2 text-gray-300">Diinstal pada host individu (server, workstation, endpoint) untuk memantau aktivitas dan log sistem pada host tersebut. HIDS/HIPS memberikan visibilitas yang lebih dalam ke aktivitas pada host tertentu, tetapi perlu diinstal dan dikelola pada setiap host.</p>
+                </li>
+                <li><strong>Signature-based Detection:</strong>
+                    <p class="mt-2 text-gray-300">Mengandalkan database signatures serangan yang dikenal. IDS/IPS mencari pola signatures ini dalam lalu lintas jaringan atau aktivitas sistem. Efektif untuk mendeteksi serangan yang sudah dikenal, tetapi kurang efektif terhadap serangan zero-day atau varian baru.</p>
+                </li>
+                <li><strong>Anomaly-based Detection:</strong>
+                    <p class="mt-2 text-gray-300">Membangun baseline perilaku normal jaringan atau sistem, dan mendeteksi aktivitas yang menyimpang secara signifikan dari baseline tersebut. Anomaly detection dapat mendeteksi serangan zero-day atau serangan yang tidak dikenal oleh signature, tetapi dapat menghasilkan lebih banyak false positive.</p>
+                </li>
+                <li><strong>Hybrid Detection:</strong>
+                    <p class="mt-2 text-gray-300">Menggabungkan signature-based dan anomaly-based detection untuk meningkatkan akurasi dan cakupan deteksi. Hybrid IDS/IPS mencoba memanfaatkan kelebihan masing-masing metode dan mengurangi kelemahan.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- How IDS/IPS Works Section -->
+        <section id="how-works" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Kerja IDS/IPS</h2>
+            <p class="text-gray-300 mb-4">IDS/IPS bekerja dengan memantau lalu lintas jaringan dan/atau aktivitas sistem, dan menganalisis data tersebut menggunakan berbagai teknik deteksi:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Traffic/Event Capture:</strong>
+                    <p class="mt-2 text-gray-300">IDS/IPS menangkap lalu lintas jaringan (untuk NIDS/NIPS) atau peristiwa sistem (untuk HIDS/HIPS). Untuk NIDS/NIPS, ini biasanya melibatkan *port mirroring* atau *network tap* untuk menyalin lalu lintas jaringan.</p>
+                </li>
+                <li><strong>Signature Analysis:</strong>
+                    <p class="mt-2 text-gray-300">IDS/IPS membandingkan lalu lintas atau peristiwa yang ditangkap dengan database signatures serangan yang dikenal. Signatures adalah pola atau karakteristik unik dari serangan tertentu. Jika cocok, IDS/IPS mendeteksi potensi serangan.</p>
+                </li>
+                <li><strong>Anomaly Detection:</strong>
+                    <p class="mt-2 text-gray-300">IDS/IPS membangun baseline perilaku normal (misalnya, lalu lintas jaringan normal, penggunaan sumber daya sistem normal). Kemudian, ia memonitor lalu lintas atau aktivitas sistem dan mencari penyimpangan signifikan dari baseline ini. Penyimpangan (anomali) dapat mengindikasikan potensi serangan.</p>
+                </li>
+                <li><strong>Policy-based Detection:</strong>
+                    <p class="mt-2 text-gray-300">IDS/IPS dapat dikonfigurasi dengan kebijakan keamanan yang mendefinisikan perilaku yang diizinkan dan tidak diizinkan. Jika lalu lintas atau aktivitas melanggar kebijakan, IDS/IPS dapat mendeteksinya sebagai potensi pelanggaran keamanan.</p>
+                </li>
+                <li><strong>Stateful Protocol Analysis:</strong>
+                    <p class="mt-2 text-gray-300">IDS/IPS menganalisis protokol jaringan (seperti TCP, HTTP, DNS) secara stateful, melacak sesi dan koneksi untuk memahami konteks komunikasi. Ini membantu dalam mendeteksi serangan yang kompleks atau serangan multi-tahap.</p>
+                </li>
+                <li><strong>Action (Untuk IPS):</strong>
+                    <p class="mt-2 text-gray-300">Jika IPS mendeteksi aktivitas berbahaya, ia dapat mengambil tindakan pencegahan otomatis, seperti:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Memblokir lalu lintas:</strong> Menghentikan paket jaringan yang mencurigakan.</li>
+                        <li><strong>Memutus koneksi:</strong> Menutup sesi jaringan yang terinfeksi.</li>
+                        <li><strong>Mengirim ulang TCP reset:</strong> Memutus koneksi TCP.</li>
+                        <li><strong>Memblokir alamat IP sumber:</strong> Mencegah lalu lintas lebih lanjut dari sumber yang menyerang.</li>
+                        <li><strong>Mengeluarkan peringatan dan log:</strong> Mencatat insiden untuk analisis lebih lanjut dan pemberitahuan tim keamanan.</li>
+                    </ul>
+                </li>
+                <li><strong>Alerting and Logging (Untuk IDS dan IPS):</strong>
+                    <p class="mt-2 text-gray-300">Baik IDS maupun IPS mencatat peristiwa keamanan yang terdeteksi dan menghasilkan peringatan (alerts) kepada tim keamanan. Peringatan ini memberikan informasi tentang jenis serangan, sumber, target, tingkat keparahan, dan tindakan yang diambil (jika IPS). Log keamanan digunakan untuk analisis, forensik, dan pelaporan.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Benefits of Using IDS/IPS Section -->
+        <section id="benefits" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Manfaat Menggunakan IDS/IPS</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Deteksi Ancaman Real-time:</strong> Memungkinkan deteksi ancaman keamanan dan serangan siber secara real-time atau near real-time.</li>
+                <li><strong>Pencegahan Serangan Otomatis (IPS):</strong> IPS dapat secara otomatis mencegah serangan dan mengurangi dampak insiden tanpa intervensi manual (tergantung konfigurasi).</li>
+                <li><strong>Visibilitas Keamanan Jaringan:</strong> Memberikan visibilitas yang lebih baik ke dalam lalu lintas jaringan dan aktivitas mencurigakan yang mungkin terjadi.</li>
+                <li><strong>Perlindungan Terhadap Berbagai Serangan:</strong> Melindungi dari berbagai jenis serangan, termasuk malware, eksploitasi kerentanan, serangan brute-force, DDoS, dan lainnya.</li>
+                <li><strong>Kepatuhan Regulasi:</strong> Membantu organisasi memenuhi persyaratan kepatuhan seperti PCI DSS, HIPAA, dan lainnya yang mewajibkan pemantauan keamanan jaringan.</li>
+                <li><strong>Respons Insiden yang Lebih Cepat:</strong> Mempercepat deteksi dan respons terhadap insiden keamanan, mengurangi waktu respons dan potensi kerusakan.</li>
+                <li><strong>Meningkatkan Postur Keamanan Secara Keseluruhan:</strong> IDS/IPS merupakan komponen penting dalam strategi keamanan siber berlapis, meningkatkan postur keamanan organisasi secara keseluruhan.</li>
+            </ul>
+        </section>
+
+        <!-- How to Use IDS/IPS Section -->
+        <section id="how-to-use" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Cara Menggunakan IDS/IPS (Umum)</h2>
+            <p class="text-gray-300 mb-4">Menggunakan IDS/IPS secara efektif memerlukan perencanaan, implementasi, konfigurasi, dan pemantauan berkelanjutan:</p>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Tentukan Kebutuhan dan Tujuan:</strong>
+                    <p class="mt-2 text-gray-300">Tentukan kebutuhan keamanan spesifik organisasi Anda. Apakah fokus utama pada deteksi (IDS) atau pencegahan (IPS) atau keduanya? Identifikasi jenis lalu lintas dan sistem yang perlu dipantau.</p>
+                </li>
+                <li><strong>Pilih Solusi IDS/IPS yang Tepat:</strong>
+                    <p class="mt-2 text-gray-300">Pilih solusi IDS/IPS yang sesuai dengan kebutuhan, anggaran, dan infrastruktur Anda. Pertimbangkan jenis deployment (Network-based, Host-based, Cloud-based), metode deteksi, performa, skalabilitas, dan dukungan vendor. Bandingkan solusi komersial dan open-source.</p>
+                </li>
+                <li><strong>Implementasi dan Deployment:</strong>
+                    <p class="mt-2 text-gray-300">Deploy IDS/IPS sesuai dengan panduan vendor. Untuk NIDS/NIPS, pasang pada titik strategis jaringan (misalnya, di perimeter jaringan, di segmen jaringan internal yang kritikal). Untuk HIDS/HIPS, instal agen pada host yang relevan.</p>
+                </li>
+                <li><strong>Konfigurasi Kebijakan dan Aturan:</strong>
+                    <p class="mt-2 text-gray-300">Konfigurasikan kebijakan keamanan dan aturan deteksi IDS/IPS. Ini termasuk:</p>
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><strong>Mengaktifkan Signatures:</strong> Aktifkan signatures serangan yang relevan dan perbarui database signature secara teratur.</li>
+                        <li><strong>Konfigurasi Anomaly Detection:</strong> Konfigurasikan baseline perilaku normal untuk anomaly detection dan sesuaikan sensitivitas deteksi.</li>
+                        <li><strong>Membuat Aturan Kustom:</strong> Buat aturan deteksi khusus yang sesuai dengan kebutuhan keamanan spesifik organisasi Anda.</li>
+                        <li><strong>Mengatur Mode Operasi (IPS):</strong> Tentukan tindakan pencegahan yang akan diambil IPS secara otomatis (blokir, reset koneksi, dll.) dan konfigurasi ambang batas pencegahan.</li>
+                    </ul>
+                </li>
+                <li><strong>Fine-tuning dan Optimasi:</strong>
+                    <p class="mt-2 text-gray-300">Setelah implementasi, fine-tune IDS/IPS untuk mengurangi false positive dan false negative. Analisis log dan peringatan secara teratur. Sesuaikan aturan dan kebijakan berdasarkan hasil analisis dan perubahan lingkungan jaringan.</p>
+                </li>
+                <li><strong>Pengujian dan Validasi:</strong>
+                    <p class="mt-2 text-gray-300">Lakukan pengujian penetrasi dan simulasi serangan untuk memvalidasi efektivitas IDS/IPS. Pastikan IDS/IPS mendeteksi dan/atau mencegah serangan yang diharapkan.</p>
+                </li>
+                <li><strong>Pemantauan dan Respons Berkelanjutan:</strong>
+                    <p class="mt-2 text-gray-300">Pantau dashboard IDS/IPS secara terus menerus, analisis peringatan keamanan, dan lakukan investigasi insiden. Tetapkan proses respons insiden yang jelas untuk menangani peringatan IDS/IPS.</p>
+                </li>
+                <li><strong>Integrasi dengan Sistem Lain:</strong>
+                    <p class="mt-2 text-gray-300">Integrasikan IDS/IPS dengan sistem keamanan lain seperti SIEM, firewall, dan sistem manajemen kerentanan untuk koordinasi keamanan yang lebih baik dan respons insiden yang lebih efisien.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Popular IDS/IPS Solutions Section -->
+        <section id="popular-ids-ips" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Solusi IDS/IPS Populer</h2>
+            <p class="text-gray-300 mb-4">Berikut adalah beberapa contoh solusi IDS/IPS populer (baik komersial maupun open-source):</p>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Cisco Secure IPS (Network-based, Commercial):</strong> Solusi IPS appliance dari Cisco, dikenal dengan performa tinggi dan fitur keamanan yang canggih.</li>
+                <li><strong>Palo Alto Networks Next-Generation Firewall (Network-based, Commercial):</strong> Firewall generasi berikutnya yang mencakup fitur IPS yang kuat, serta fitur keamanan lainnya.</li>
+                <li><strong>Snort (Network-based, Open Source):</strong> IDS open-source yang sangat populer dan fleksibel, sering digunakan sebagai NIDS.</li>
+                <li><strong>Suricata (Network-based, Open Source):</strong> IDS/IPS open-source yang *multi-threaded* dan berkinerja tinggi, sering dianggap sebagai alternatif untuk Snort.</li>
+                <li><strong>Zeek (sebelumnya Bro) (Network-based, Open Source):</strong> Platform analisis keamanan jaringan open-source yang kuat, sering digunakan untuk deteksi anomali dan analisis lalu lintas jaringan yang mendalam.</li>
+                <li><strong>OSSEC HIDS (Host-based, Open Source):</strong> HIDS open-source yang populer untuk pemantauan log, integritas file, dan deteksi rootkit pada host.</li>
+                <li><strong>Wazuh (Host-based, Open Source, berbasis OSSEC):</strong> Platform keamanan endpoint open-source yang dibangun di atas OSSEC, mencakup HIDS, SIEM, dan fitur EDR (Endpoint Detection and Response).</li>
+            </ul>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://www.sans.org/reading-room/whitepapers/detection/intrusion-detection-systems-ids-intrusion-prevention-systems-ips-38517" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">SANS Institute - Intrusion Detection Systems (IDS) & Intrusion Prevention Systems (IPS)</a> (Whitepaper tentang IDS/IPS dari SANS Institute)</li>
+                <li><a href="https://www.nist.gov/publications/intrusion-detection-systems" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">NIST - Intrusion Detection Systems</a> (Publikasi tentang IDS dari NIST)</li>
+                <li><a href="https://www.snort.org/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi Snort</a> (IDS/IPS Open Source)</li>
+                <li><a href="https://suricata.io/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Website Resmi Suricata</a> (IDS/IPS Open Source)</li>
+                <li>Dokumentasi resmi dari vendor IDS/IPS yang Anda pilih (misalnya, Cisco, Palo Alto Networks, Snort, Suricata, OSSEC, Wazuh).</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

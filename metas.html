@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metasploit Framework - Nofri Security Tools</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html"> <h1 class="text-xl font-bold text-green-400 flex items-center hover:text-green-300 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2 text-green-400">
+                    <path fill-rule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25.75.75 0 001.5 0 3.75 3.75 0 017.5 0 .75.75 0 001.5 0A5.25 5.25 0 0012 1.5zM9.75 9.75a3 3 0 106 0 3 3 0 00-6 0zM12 12.75a7.5 7.5 0 017.5 7.5.75.75 0 001.5 0 9 9 0 00-9-9 .75.75 0 000 1.5 7.5 7.5 0 010 7.5.75.75 0 001.5 0 9 9 0 009-9 9 9 0 00-9-9 9 9 0 00-9 9 .75.75 0 001.5 0 7.5 7.5 0 017.5-7.5z" clip-rule="evenodd" />
+                  </svg>
+                Nofri Security Tools
+            </h1></a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html#offensive" class="hover:text-blue-400">Offensive</a></li>
+                    <li><a href="index.html#defensive" class="hover:text-green-400">Defensive</a></li>
+                    <li><a href="index.html#about" class="hover:text-purple-400">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-blue-400">Metasploit Framework</h2>
+            <p class="text-lg text-gray-300">Framework penetrasi testing serbaguna untuk pengembangan dan eksekusi exploit.</p>
+            <img src="https://www.metasploit.com/assets/logos/metasploit-logo-b975b42c156188297477455b5b59918a4106f80e8945a7c22489345874a8785d.svg" alt="Metasploit Logo" class="mt-8 mx-auto w-64">
+        </section>
+
+        <!-- What is Metasploit Section -->
+        <section id="what-is" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Apa itu Metasploit Framework?</h2>
+            <p class="text-gray-300 mb-4">Metasploit Framework adalah proyek sumber terbuka yang menyediakan sumber daya penting bagi penguji penetrasi dan pengembang exploit. Ini adalah lingkungan yang kuat untuk menjelajahi kerentanan keamanan, mengembangkan kode exploit, dan melakukan pengujian penetrasi.</p>
+            <p class="text-gray-300 mb-4">Framework ini ditulis dalam bahasa Ruby dan dapat diperluas dengan modul-modul dalam berbagai bahasa pemrograman seperti Python, C, dan Assembly. Arsitektur modularnya memungkinkan pengguna untuk menyesuaikan dan memperluas fungsionalitasnya sesuai kebutuhan.</p>
+            <p class="text-gray-300">Metasploit sangat populer di kalangan profesional keamanan siber karena kemampuannya yang komprehensif dan komunitas yang aktif yang terus mengembangkan dan memperbarui modul-modulnya.</p>
+        </section>
+
+        <!-- Key Features Section -->
+        <section id="features" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Fitur Utama Metasploit</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Database Exploit yang Luas:</strong> Koleksi besar exploit yang terus diperbarui untuk berbagai kerentanan dalam sistem operasi, aplikasi, dan layanan.</li>
+                <li><strong>Meterpreter:</strong> Payload exploit tingkat lanjut yang menyediakan akses interaktif ke sistem target, memungkinkan eksekusi perintah, transfer file, dan banyak lagi.</li>
+                <li><strong>Modul Auxiliary:</strong> Berbagai modul bantu untuk pemindaian, pengumpulan informasi, fuzzing, dan tugas-tugas lain yang mendukung pengujian penetrasi.</li>
+                <li><strong>Msfconsole:</strong> Antarmuka command-line yang kuat untuk mengakses dan menggunakan semua fitur Metasploit.</li>
+                <li><strong>Modul Encoding dan Evasion:</strong> Teknik untuk menghindari deteksi oleh sistem keamanan seperti antivirus dan IDS/IPS.</li>
+                <li><strong>Post-Exploitation Modules:</strong> Modul-modul untuk tugas setelah eksploitasi berhasil, seperti privilege escalation, password dumping, dan lateral movement.</li>
+            </ul>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section id="use-cases" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Penggunaan Metasploit</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><strong>Penetration Testing:</strong> Menguji keamanan jaringan dan sistem dengan mensimulasikan serangan dunia nyata untuk mengidentifikasi dan memvalidasi kerentanan.</li>
+                <li><strong>Vulnerability Validation:</strong> Memastikan bahwa kerentanan yang diidentifikasi oleh vulnerability scanner benar-benar dapat dieksploitasi.</li>
+                <li><strong>Red Teaming:</strong> Mensimulasikan serangan canggih untuk menguji kemampuan deteksi dan respons tim keamanan organisasi.</li>
+                <li><strong>Pengembangan Exploit:</strong> Platform untuk mengembangkan dan menguji exploit baru untuk kerentanan yang belum dikenal atau zero-day.</li>
+                <li><strong>Pelatihan Keamanan:</strong> Lingkungan pembelajaran yang ideal untuk memahami konsep keamanan ofensif dan teknik serangan.</li>
+            </ul>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section id="getting-started" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Mulai Menggunakan Metasploit</h2>
+            <ol class="list-decimal list-inside text-gray-300">
+                <li><strong>Instalasi:</strong> Unduh dan instal Metasploit Framework. Tersedia instalasi untuk berbagai sistem operasi (Linux, Windows, macOS). Kali Linux sudah menyertakan Metasploit secara default.</li>
+                <li><strong>Buka Msfconsole:</strong> Buka terminal dan ketik <code>msfconsole</code> untuk memulai antarmuka command-line Metasploit.</li>
+                <li><strong>Pelajari Perintah Dasar:</strong> Beberapa perintah dasar yang perlu Anda ketahui:
+                    <ul class="list-disc list-inside ml-6 mt-2">
+                        <li><code>search [keyword]</code>: Mencari exploit, auxiliary module, atau payload.</li>
+                        <li><code>use [module path]</code>: Memilih modul yang akan digunakan.</li>
+                        <li><code>show options</code>: Menampilkan opsi yang perlu dikonfigurasi untuk modul yang dipilih.</li>
+                        <li><code>set [option name] [value]</code>: Mengatur nilai opsi.</li>
+                        <li><code>exploit</code>: Menjalankan exploit atau modul yang dipilih.</li>
+                        <li><code>help</code>: Menampilkan bantuan untuk perintah.</li>
+                    </ul>
+                </li>
+                <li><strong>Eksplorasi Modul:</strong> Mulailah dengan mencoba modul-modul sederhana dan pelajari cara kerjanya. Dokumentasi dan tutorial online akan sangat membantu.</li>
+            </ol>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400">Sumber Daya Tambahan</h2>
+            <ul class="list-disc list-inside text-gray-300">
+                <li><a href="https://docs.metasploit.com/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Dokumentasi Resmi Metasploit</a></li>
+                <li><a href="https://www.rapid7.com/blog/tag/metasploit/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Blog Rapid7 Metasploit</a> (Berita, Tutorial, dan Update)</li>
+                <li><a href="https://community.rapid7.com/c/metasploit/7" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-400">Forum Komunitas Metasploit</a></li>
+                <li>Banyak tutorial dan video di platform seperti YouTube dan situs web keamanan lainnya.</li>
+            </ul>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

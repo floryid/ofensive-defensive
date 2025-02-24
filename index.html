@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nofri - Web Application Security</title>
+    <link rel="stylesheet" href="https//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Heroicons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+        
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/heroicons@1.0.5/css/heroicons.css" />
+    <style>
+        body { font-family: 'Roboto Mono', monospace; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-mono">
+
+    <!-- Header -->
+    <header class="bg-gray-800 p-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold text-green-400 flex items-center">
+                <i class="fas fa-skull-crossbones mr-2 text-green-400"></i>  <!-- Ikon logo hacker -->
+                Nofri Security Tools
+            </h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#offensive" class="hover:text-green-400 flex items-center"><i class="fas fa-fire-alt mr-1"></i> Offensive</a></li> <!-- Ikon ofensif -->
+                    <li><a href="#defensive" class="hover:text-green-400 flex items-center"><i class="fas fa-shield-alt mr-1"></i> Defensive</a></li> <!-- Ikon defensif -->
+                    <li><a href="#about" class="hover:text-green-400 flex items-center"><i class="fas fa-info-circle mr-1"></i> About</a></li> <!-- Ikon about -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-12 px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4 text-green-400">Selamat Datang di Platform Keamanan Web</h2>
+            <p class="text-lg text-gray-300">Pelajari dan uji alat keamanan web ofensif dan defensif untuk melindungi website Anda.</p>
+            <button class="mt-8 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Mulai Eksplorasi</button>
+        </section>
+
+        <!-- Offensive Tools Section -->
+        <section id="offensive" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-blue-400 flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75l9 9-3.75 3.75-9-9 3.75-3.75zm6.75 6.75l-3 3-3-3m6.75 6.75l-3-3 .75-.75" />
+              </svg> Alat Ofensif</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./metasploit.png" alt="Metasploit Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">Metasploit Framework</h3>
+                    <p class="text-gray-300">Framework penetrasi testing serbaguna dengan database exploit besar.</p>
+                    <a href="metas.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./nmap.jpg" alt="Nmap Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">Nmap (Network Mapper)</h3>
+                    <p class="text-gray-300">Network scanner kuat untuk pemetaan jaringan dan port scanning.</p>
+                    <a href="nmap.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./burpsuite.jpg" alt="Burp Suite Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">Burp Suite</h3>
+                    <p class="text-gray-300">Platform pengujian keamanan aplikasi web terdepan di industri.</p>
+                    <a href="burp.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./sql.jpg" alt="SQLmap Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">SQLmap</h3>
+                    <p class="text-gray-300">Alat otomatis untuk deteksi dan eksploitasi kerentanan SQL injection.</p>
+                    <a href="sql.html" class="inline-block mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Defensive Tools Section -->
+        <section id="defensive" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-green-400 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0H3.75v16.5H16.5V3.75z" />
+              </svg> Alat Defensif</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./waf.jpg" alt="WAF Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">Web Application Firewall (WAF)</h3>
+                    <p class="text-gray-300">WAF melindungi aplikasi web dari serangan lapisan aplikasi seperti SQL Injection, XSS, dan lainnya dengan memfilter dan memonitor lalu lintas HTTP/HTTPS.</p>
+                    <a href="waf.html" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./siem.jpg" alt="SIEM Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">SIEM (Security Information and Event Management)</h3>
+                    <p class="text-gray-300">SIEM mengumpulkan dan menganalisis log keamanan dari berbagai sumber di seluruh infrastruktur TI untuk deteksi ancaman, respons insiden, dan kepatuhan.</p>
+                    <a href="siem.html" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./ids.jpeg" alt="IDS/IPS Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">IDS/IPS (Intrusion Detection/Prevention System)</h3>
+                    <p class="text-gray-300">IDS/IPS memonitor lalu lintas jaringan untuk aktivitas mencurigakan. IDS mendeteksi serangan, sementara IPS dapat secara otomatis memblokir atau mencegah serangan tersebut.</p>
+                    <a href="ids.html" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-md">
+                    <img src="./vuln.jpg" alt="Vulnerability Scanner Image" class="mb-4 rounded-md">
+                    <h3 class="font-bold mb-2 text-white">Vulnerability Scanner</h3>
+                    <p class="text-gray-300">Vulnerability scanner secara otomatis memindai sistem, jaringan, atau aplikasi untuk menemukan kerentanan keamanan yang diketahui, membantu organisasi untuk memperbaikinya sebelum dieksploitasi.</p>
+                    <a href="vuln.html" class="inline-block mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Pelajari Lebih Lanjut</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-2xl font-bold mb-6 text-purple-400 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75-3.75h7.5M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg> Tentang Kami</h2>
+            <p class="text-gray-300">Website ini dibuat oleh Nofri sebagai platform pembelajaran keamanan web.  Tujuan utamanya adalah untuk membantu pengguna memahami dan meningkatkan keamanan website mereka melalui simulasi serangan dan pertahanan.</p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-6 text-center">
+        <p class="text-gray-400">© 2023 Nofri Security Tools. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
